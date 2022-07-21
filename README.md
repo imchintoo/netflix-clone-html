@@ -7,3 +7,9 @@ This project is designed for study purpose. Designed pages are attached below.
 
 ## Sign-in Page
 ![Sign-in Page](https://github.com/imchintoo/netflix-clone-html/blob/main/img/signin-page.png)
+
+## Profile Selection Page
+![Profile Selection Page](https://github.com/imchintoo/netflix-clone-html/blob/main/img/profile-selection.png)
+
+## Main Page
+![Main Page](https://github.com/imchintoo/netflix-clone-html/blob/main/img/main-page.png)
