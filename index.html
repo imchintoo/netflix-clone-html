@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Netflix Clone</title>
+
+        <!-- css -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./util/owl/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container __container">
+            <div class="row __main justify-content-between">
+                <div class="col-12 p-0">
+                    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img src="./img/Netflix_2015_logo.svg.png" alt="Netflix Clone" />
+                            </a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">TV Shows</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Movies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">New & Popular</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">My List</a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="bi bi-search"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <i class="bi bi-bell-fill"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropstart">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                                id="navbarDropdown"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                <img src="./img/profile-1.png" alt="profile" />
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="./img/profile-1.png" alt="profile" class="bi" /> Chintan
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="./img/profile-2.png" alt="profile" class="bi" /> Vatsal</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="./img/profile-3.png" alt="profile" class="bi" /> Harsh</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#"
+                                                        ><img src="./img/profile-1.png" alt="profile" class="bi" /> Shruhad</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#"
+                                                        ><img src="./img/profile-2.png" alt="profile" class="bi" /> Mira</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#"> <i class="bi bi-pencil"></i> Manage Profiles </a>
+                                                </li>
+                                                <li><hr class="dropdown-divider" /></li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#"> <i class="bi bi-person-circle"></i> Account</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#"> <i class="bi bi-info-circle"></i> Help Center</a>
+                                                </li>
+                                                <li><hr class="dropdown-divider" /></li>
+                                                <li><a class="dropdown-item" href="#">Sign out of Netflix</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-12 p-0">
+                    <div class="__full_width_container p-5" style="background-image: url(./img/content/kungfu-panda-cover.webp)">
+                        <div class="__dark_overlay"></div>
+                        <div class="d-flex justify-content-between align-items-end text-white">
+                            <div class="col-5 __fill_content">
+                                <div class="__title mb-4">
+                                    <img src="./img/content/kungfu-panda.webp" alt="Kungfu Panda" />
+                                </div>
+                                <div class="__subtitle h3 __txt_normal mb-3">#4 in TV Shows Today</div>
+                                <div class="__about h5 __txt_normal mb-4">
+                                    Can two mismatched warriors learn to get along and save the world? Playful Po teams up with uptight knight
+                                    Wandering Blade on a quest to find magical weapons and stop a plot to destroy the planet in this animated series
+                                    based on the beloved films.
+                                </div>
+                                <div class="__controls">
+                                    <button class="__play h4 __txt_strong"><i class="bi bi-play-fill"></i> Play</button>
+                                    <button class="__info h4 text-white __txt_strong"><i class="bi bi-info-circle"></i> More Info</button>
+                                </div>
+                            </div>
+                            <div class="col-3">Chintan</div>
+                        </div>
+
+                        <div class="__top_10_container p-5 text-white">
+                            <div class="__title h4 __txt_strong mb-4">Top 10 Movies in India Today</div>
+                            <div class="__top_10_list">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="__list_container">
+                                            <div class="__list_index __txt_strong">1</div>
+                                            <div class="__list_content">
+                                                <img src="./img/content/top10/poster-1.jpg" alt="poster-1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="__list_container">
+                                            <div class="__list_index __txt_strong">2</div>
+                                            <div class="__list_content">
+                                                <img src="./img/content/top10/poster-2.webp" alt="poster-1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="__list_container">
+                                            <div class="__list_index __txt_strong">3</div>
+                                            <div class="__list_content">
+                                                <img src="./img/content/top10/poster-3.webp" alt="poster-1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="__list_container">
+                                            <div class="__list_index __txt_strong">4</div>
+                                            <div class="__list_content">
+                                                <img src="./img/content/top10/poster-4.webp" alt="poster-1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="__list_container">
+                                            <div class="__list_index __txt_strong">5</div>
+                                            <div class="__list_content">
+                                                <img src="./img/content/top10/poster-5.webp" alt="poster-1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container __container">
+            <div class="row">
+                <div class="__bg_dark p-5 __gap"></div>
+            </div>
+        </div>
+
+        <!-- new releases -->
+        <div class="container __container">
+            <div class="row">
+                <div class="__bg_dark p-5 text-white ptb-10 pb-5">
+                    <div class="__title h4 __txt_strong mb-4">New Releases</div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-1.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-2.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-3.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-4.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-5.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-6.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-7.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popular -->
+        <div class="container __container">
+            <div class="row">
+                <div class="__bg_dark p-5 text-white ptb-10 pb-5">
+                    <div class="__title h4 __txt_strong mb-4">Popular on Netflix</div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-1.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-2.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-3.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-4.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-5.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-6.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-7.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- trending -->
+        <div class="container __container">
+            <div class="row">
+                <div class="__bg_dark p-5 text-white ptb-10 pb-5">
+                    <div class="__title h4 __txt_strong mb-4">Trending Now</div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-1.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-2.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-3.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-4.jpg" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-5.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-6.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="__poster">
+                                <img src="./img/content/new-releases/poster-7.webp" alt="poster-1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="container __container">
+            <div class="row __footer">
+                <div class="d-flex justify-content-center __bg_dark p-5">
+                    <div class="__w_50">
+                        <div class="row">
+                            <div class="col-12 mb-4">Any Questions? call +91-84606-94787</div>
+                            <div class="col-3">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#">Investors</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Privacy</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Speed Test</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#">Help Center</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Cookie Preferences</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Legal Notices</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#">Account</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Ways to watch</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Only on Netflix</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#">Media Center</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Terms of use</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 mt-4">&copy; Copyright 2022 by Chintan Goswami. All rights reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- script files -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./util/owl/owl.carousel.min.js"></script>
+        <script>
+            //use window.scrollY
+            var scrollpos = window.scrollY;
+            var header = document.getElementById('navbar');
+
+            function add_class_on_scroll() {
+                header.classList.add('__dark');
+            }
+
+            function remove_class_on_scroll() {
+                header.classList.remove('__dark');
+            }
+
+            window.addEventListener('scroll', function () {
+                //Here you forgot to update the value
+                scrollpos = window.scrollY;
+
+                if (scrollpos > 10) {
+                    add_class_on_scroll();
+                } else {
+                    remove_class_on_scroll();
+                }
+                console.log(scrollpos);
+            });
+
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                lazyLoad: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
