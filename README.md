@@ -12,4 +12,4 @@ This project is designed for study purpose. Designed pages are attached below.
 ![Profile Selection Page](https://github.com/imchintoo/netflix-clone-html/blob/main/img/profile-selection.png)
 
 ## Main Page
-![Main Page](https://github.com/imchintoo/netflix-clone-html/blob/main/img/main-page.png)
+![Main Page](https://github.com/imchintoo/netflix-clone-html/blob/main/img/main-index.png)
